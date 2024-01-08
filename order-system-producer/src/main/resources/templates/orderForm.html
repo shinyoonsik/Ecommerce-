@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Order System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>주문 시스템</h1>
+    <p>맛난 음식을 주문해 보아요</p>
+    <form class="form-inline" action="/order/confirm" method="post">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" style="width: 80px">Member</button>
+            </div>
+            <input type="text" class="form-control" name="memberId" size="50" placeholder="회원ID" required>
+        </div>
+        </br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" style="width: 80px">Product</button>
+            </div>
+            <input type="text" class="form-control" name="productId"  size="50" placeholder="제품" required>
+        </div>
+        </br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" style="width: 80px" >Amount</button>
+            </div>
+            <input type="text" class="form-control" name="amount"  size="50.5" placeholder="금액" required>
+        </div>
+        </br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger" style="width: 80px">Address</button>
+            </div>
+            <input type="text" class="form-control" name="shippingAddress" size="50" placeholder="배송지" required>
+        </div>
+        </br>
+        </br>
+        <button class="btn btn-warning" type="submit" >결제하기</button>
+    </form>
+</div>
+
+</body>
+</html>
