@@ -1,4 +1,4 @@
-# 대용량 데이터 처리를 위한 아키텍처 구조로 개선한 ecommerce system
+# Pub/Sub 구조로 개선한 ecommerce system
 - 기술 스택
   - 
     - SpringBoot
